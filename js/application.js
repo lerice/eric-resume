@@ -4,13 +4,16 @@ $(function () {
 });
 
 $(document).ready(function () {
-	//$('#logodiv').fadeIn(2000, loadBar);
+	$('header').fadeIn(2000);
 });
 
-function loadBar() {
-	//$('header').show(1000);
-}
 
 function fadeIn(obj) {
-	$(obj).fadeIn(2000);
+	$(obj).fadeIn(2000,loadTitles);
+	
+	function loadTitles() {
+		$('#text_et').fadeIn(500);
+		$('#text_wd').fadeIn(500);
+	}
 }
+
