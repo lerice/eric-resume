@@ -1,19 +1,19 @@
 /* The function to be called on successful body load */
-$(function () {
+/*.$(function () {
 	
-});
+});*/
 
 $(document).ready(function () {
-	$('header').fadeIn(2000);
+	//$('header').fadeIn(2000);
 });
 
 
 function fadeIn(obj) {
-	$(obj).fadeIn(2000,loadTitles);
+	$(obj).fadeIn(1000,loadTitles);
 	
 	function loadTitles() {
-		$('#text_et').fadeIn(500);
-		$('#text_wd').fadeIn(500);
+		$('#text_et').fadeIn(500,function() {
+			$('#text_wd').fadeIn(500)});
 	}
 }
 
