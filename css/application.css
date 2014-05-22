@@ -9,6 +9,8 @@ body {
 	height: 100%;
 }
 
+/* CSS for the header */
+
 header {
 	width: 100%;
 	min-height: 81px;
@@ -17,7 +19,16 @@ header {
 	color: #FFFFFF;
 	position: fixed;
 	
+	margin-top: -84px;
 	z-index: 3;
+	
+	transition-duration: 1.5s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.25, 0.5, 0.25, 1);
+}
+
+.headeronload {
+	margin-top: 0px;
 }
 
 #title_et {
@@ -75,27 +86,7 @@ header {
 	color: #CCCCCC;
 }
 
-footer {
-	width: 100%;
-	height: 100px;
-	background: #1E1E1E;
-	border-top: 3px solid;
-	color: #FFFFFF;
-	bottom: 0;
-	position: fixed;
-	
-	z-index: 3;
-}
-
-#botnav {
-	text-align: center;
-}
-
-#botnavlist li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 30px;
-}
+/* CSS for skeleton body */
 
 .centered {
 	max-width: 1000px;
@@ -142,10 +133,72 @@ footer {
 }
 
 #aboutme {
-	margin-top: -100px;
-	padding-bottom: 100px;
+	margin-top: -120px;
+	padding-bottom: 120px;
 	color: white;
 	font-family: 'Josefin Slab', serif;
 	font-size: 40px;
 	text-align: center;
+}
+
+/* CSS for the footer */
+
+footer {
+	width: 100%;
+	height: 120px;
+	background: #E1E1E1;
+	color: #1E1E1E;
+	bottom: 0;
+	position: fixed;
+	
+	margin-bottom: -120px;
+	z-index: 3;
+	
+	transition-duration: 1.5s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.25, 0.5, 0.25, 1);
+}
+
+.footeronload {
+	margin-bottom: 0px;
+}
+
+#hoverinfo {
+	width: 100%;
+	height: 20px;
+	background: #1E1E1E;
+	position: relative;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+}
+
+#hovertext {
+	margin-top: 0px;
+	padding-top: 3px;
+}
+
+#botnav {
+	text-align: center;
+}
+
+#botnavlist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+
+#copyrightbar {
+	width: 100%;
+	height: 25px;
+	background: #1E1E1E;
+	color: #CCCCCC;
+	bottom: 0;
+	position: absolute;
+	font-size: 10px;
+}
+
+#copyright {
+	margin-top: 5px;
+	float: right;
 }
