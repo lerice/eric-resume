@@ -13,13 +13,13 @@ body {
 
 header {
 	width: 100%;
-	min-height: 81px;
+	min-height: 80px;
 	background: #1E1E1E;
 	border-bottom: 3px solid;
 	color: #FFFFFF;
 	position: fixed;
 	
-	margin-top: -84px;
+	margin-top: -83px;
 	z-index: 3;
 	
 	transition-duration: 1.5s;
@@ -66,10 +66,11 @@ header {
 
 #topnavlist li a {
 	display: block;
-	padding: 31px 10px;
+	padding: 0px 10px;
 	background: url(../images/topnavback.jpg);
 	color: #999999;
 	text-decoration: none;
+	line-height: 80px;
 	
 	transition-duration: 0.4s;
 	transition-property: all;
@@ -146,7 +147,7 @@ header {
 footer {
 	width: 100%;
 	height: 120px;
-	background: #E1E1E1;
+	background: #CACACA;
 	color: #1E1E1E;
 	bottom: 0;
 	position: fixed;
@@ -179,18 +180,59 @@ footer {
 }
 
 #botnav {
+	height: 100px;
+	width: 692px;
 	text-align: center;
+	margin: -15px auto 0 auto;
+	overflow: hidden;
 }
 
 #botnavlist li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 30px;
+}
+
+.botnavimg {
+	width: 100px;
+	height: 72px;
+	display: block;
+	float: left;
+	
+	background: #FFFFFF;
+	
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-color: #CACACA;
+	
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-ms-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	transform: skew(-20deg);
+	
+	transition-duration: 0.4s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.botnavimg:hover {
+	background: #EFEFEF;
+}
+
+.botnavimg img{
+	-webkit-transform: skew(20deg) !important;
+	-moz-transform: skew(20deg) !important;
+	-ms-transform: skew(20deg) !important;
+	-o-transform: skew(20deg) !important;
+	transform: skew(20deg) !important;
+	margin-top: 10px;
 }
 
 #copyrightbar {
 	width: 100%;
-	height: 25px;
+	height: 20px;
 	background: #1E1E1E;
 	color: #CCCCCC;
 	bottom: 0;
@@ -199,6 +241,6 @@ footer {
 }
 
 #copyright {
-	margin-top: 5px;
+	margin-top: 2px;
 	float: right;
 }
