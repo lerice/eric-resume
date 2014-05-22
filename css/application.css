@@ -177,6 +177,7 @@ footer {
 #hovertext {
 	margin-top: 0px;
 	padding-top: 3px;
+	text-transform: uppercase;
 }
 
 #botnav {
@@ -218,7 +219,7 @@ footer {
 }
 
 .botnavimg:hover {
-	background: #EFEFEF;
+	background: #1E1E1E;
 }
 
 .botnavimg img{
