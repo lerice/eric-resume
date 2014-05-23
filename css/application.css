@@ -170,7 +170,7 @@ footer {
 	background: #1E1E1E;
 	position: relative;
 	color: #FFFFFF;
-	font-size: 11px;
+	font-size: 10px;
 	text-align: center;
 }
 
@@ -195,17 +195,13 @@ footer {
 
 .botnavimg {
 	width: 100px;
-	height: 72px;
+	height: 74px;
 	display: block;
 	float: left;
-	
 	background: #FFFFFF;
 	
-	border-top: 4px solid;
-	border-bottom: 4px solid;
-	border-left: 2px solid;
-	border-right: 2px solid;
-	border-color: #CACACA;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
 	
 	-webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
@@ -218,8 +214,35 @@ footer {
 	transition-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 
-.botnavimg:hover {
-	background: #1E1E1E;
+/* Individual colours for the bottom navigation buttons */
+
+#nav_skills {
+	border-color: #2285FF;
+}
+
+#nav_education {
+	border-color: #1B315E;
+}
+
+#nav_achievements {
+	border-color: #B5CF31;
+}
+
+#nav_workexp{
+	border-color: #6E7575;
+}
+
+#nav_portfolio {
+	border-color: #663300;
+}
+
+#nav_github {
+	border-color: #000000;
+}
+
+#nav_skills:hover, #nav_skills:hover, #nav_education:hover, #nav_achievements:hover, #nav_workexp:hover, #nav_portfolio:hover, #nav_github:hover {
+	background: #CACACA;
+	border-color: #FFFFFF;
 }
 
 .botnavimg img{
