@@ -30,19 +30,10 @@ $(document).ready(function() {
 	//And setting text to blank on mouseexit:
 	$('.botnavimg').hover(function() {
 	}, function() {
-		$('#hovertext').html('');
+		$('#hovertext').html('eric tan - web developer');
 	});
-});
-
-
-function fadeIn(obj) {
-	$(obj).fadeIn(1000, loadTitles);
 	
-	function loadTitles() {
-		$('#text_et').fadeIn(500,function() {
-			$('#text_wd').fadeIn(500)});
-	}
-	
+	//Slide out the header and footer bars on page exit:
 	$('a.transition').click(function(event) {
 		event.preventDefault();
 		linkLocation = this.href;
@@ -57,5 +48,15 @@ function fadeIn(obj) {
 	
 	function redirectPage() {
 		window.location = linkLocation;
+	}
+});
+
+// 'Fade' in the home page circle logo, with titles following
+function fadeIn(obj) {
+	$(obj).fadeIn(1000, loadTitles);
+	
+	function loadTitles() {
+		$('#text_et').fadeIn(500,function() {
+			$('#text_wd').fadeIn(500)});
 	}
 }

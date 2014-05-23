@@ -181,15 +181,13 @@ footer {
 }
 
 #botnav {
-	height: 100px;
-	width: 692px;
+	width: 680px;
 	text-align: center;
 	margin: -15px auto 0 auto;
 	overflow: hidden;
 }
 
 #botnavlist li {
-	display: inline;
 	list-style-type: none;
 }
 
@@ -240,7 +238,7 @@ footer {
 	border-color: #000000;
 }
 
-#nav_skills:hover, #nav_skills:hover, #nav_education:hover, #nav_achievements:hover, #nav_workexp:hover, #nav_portfolio:hover, #nav_github:hover {
+#nav_skills:hover, #nav_education:hover, #nav_achievements:hover, #nav_workexp:hover, #nav_portfolio:hover, #nav_github:hover {
 	background: #CACACA;
 	border-color: #FFFFFF;
 }
