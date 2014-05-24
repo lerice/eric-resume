@@ -1,10 +1,10 @@
 /* The function to be called on successful body load */
-$(document).ready(function() {
+$(document).ready(function() {	
 	//Slide in the header and footer on page load:
 	$('header').addClass('headeronload');
 	$('footer').addClass('footeronload');
 	
-	//Save the current page header:
+	//Save the current page title:
 	var currentPage = $('#hovertext').html();
 	
 	//Setting the individual text changes for the footer navigation:
@@ -57,6 +57,9 @@ function fadeIn(obj) {
 	
 	function loadTitles() {
 		$('#text_et').fadeIn(500,function() {
-			$('#text_wd').fadeIn(500)});
+			$('#text_wd').fadeIn(500,function() {
+				$('#downarrowdiv').fadeIn(500)
+			});
+		});
 	}
 }

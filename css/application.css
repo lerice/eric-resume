@@ -99,49 +99,6 @@ header {
 	min-height: 640px;
 }
 
-#logodiv {
-	width: 600px;
-	height: 600px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-}
-
-#logo {
-	display: none;
-	left: 0px;
-	top: 0px;
-	z-index: 1;
-}
-
-#text_et {
-	display: none;
-	position: relative;
-	left: 347px;
-	top: -465px;
-	z-index: 2;
-}
-
-#text_wd {
-	display: none;
-	position: relative;
-	left: -185px;
-	top: -295px;
-	z-index: 2;
-}
-
-#aboutme {
-	margin-top: -120px;
-	padding-bottom: 120px;
-	color: white;
-	font-family: 'Josefin Slab', serif;
-	font-size: 40px;
-	text-align: center;
-}
-
 /* CSS for the footer */
 
 footer {
@@ -269,4 +226,92 @@ footer {
 #copyright {
 	margin-top: 2px;
 	float: right;
+}
+
+/* CSS for individual pages */
+
+#logodiv {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+#logo {
+	display: none;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+#text_et {
+	display: none;
+	position: relative;
+	left: 347px;
+	top: -465px;
+	z-index: 2;
+}
+
+#text_wd {
+	display: none;
+	position: relative;
+	left: -185px;
+	top: -295px;
+	z-index: 2;
+}
+
+#downarrowdiv {
+	display: none;
+	width: 50px;
+	height: 100px;
+	margin: -220px auto 0 auto;
+	z-index: 100;
+}
+
+@-webkit-keyframes slide {
+	0% { margin-top: 0px; }
+	50% { margin-top: 40px; }
+	100% { margin-top: 0px; }
+}
+
+@-moz-keyframes slide {
+	0% { margin-top: 0px; }
+	50% { margin-top: 40px; }
+	100% { margin-top: 0px; }
+}
+
+#downarrow {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;    
+	
+	-webkit-animation-name: slide; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+	-moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+	
+    -moz-animation-name: slide; 
+    -moz-animation-duration: 2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+}
+
+#aboutme {
+	margin-top: 0px;
+	padding-bottom: 120px;
+	color: white;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+.fineprint {
+	font-family: Arial;
+	font-size: 9px;
 }
