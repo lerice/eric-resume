@@ -20,7 +20,7 @@ header {
 	position: fixed;
 	
 	margin-top: -83px;
-	z-index: 3;
+	z-index: 10000;
 	
 	transition-duration: 1.5s;
 	transition-property: all;
@@ -110,7 +110,7 @@ footer {
 	position: fixed;
 	
 	margin-bottom: -120px;
-	z-index: 3;
+	z-index: 10000;
 	
 	transition-duration: 1.5s;
 	transition-property: all;
@@ -232,7 +232,7 @@ footer {
 
 #logodiv {
 	width: 600px;
-	height: 600px;
+	height: 500px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -266,10 +266,11 @@ footer {
 
 #downarrowdiv {
 	display: none;
+	position: relative;
 	width: 50px;
 	height: 100px;
 	margin: -220px auto 0 auto;
-	z-index: 100;
+	z-index: 3;
 }
 
 @-webkit-keyframes slide {
