@@ -1,13 +1,13 @@
 /* The function to be called on successful body load */
-/*.$(function () {
-	
-});*/
-
 $(document).ready(function() {
+	//Slide in the header and footer on page load:
 	$('header').addClass('headeronload');
 	$('footer').addClass('footeronload');
 	
-	//Setting the individual text changes:
+	//Save the current page header:
+	var currentPage = $('#hovertext').html();
+	
+	//Setting the individual text changes for the footer navigation:
 	$('#nav_skills').hover(function() {
 		$('#hovertext').html('technical skills');
 	});
@@ -27,10 +27,10 @@ $(document).ready(function() {
 		$('#hovertext').html('my github');
 	});
 	
-	//And setting text to blank on mouseexit:
+	//And setting text to default on mouseexit:
 	$('.botnavimg').hover(function() {
 	}, function() {
-		$('#hovertext').html('eric tan - web developer');
+		$('#hovertext').html(currentPage);
 	});
 	
 	//Slide out the header and footer bars on page exit:
