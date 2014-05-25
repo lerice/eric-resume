@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
-	font-size: 15px;
+	color: white;
 	height: 100%;
 }
 
@@ -18,6 +18,7 @@ header {
 	border-bottom: 3px solid;
 	color: #FFFFFF;
 	position: fixed;
+	font-size: 15px;
 	
 	margin-top: -83px;
 	z-index: 10000;
@@ -94,9 +95,15 @@ header {
 	margin: 0 auto;
 }
 
-#height100 {
+.height100 {
 	height: 100%;
-	min-height: 640px;
+	min-height: 660px;
+}
+
+#main {
+	padding-top: 80px;
+	padding-bottom: 120px;
+	font-family: 'Cambo', serif;
 }
 
 /* CSS for the footer */
@@ -140,8 +147,12 @@ footer {
 #botnav {
 	width: 680px;
 	text-align: center;
-	margin: -15px auto 0 auto;
+	margin: 0 auto;
 	overflow: hidden;
+}
+
+#botnavlist {
+	margin: 0;
 }
 
 #botnavlist li {
@@ -228,7 +239,7 @@ footer {
 	float: right;
 }
 
-/* CSS for individual pages */
+/********* CSS for individual pages *********/
 
 #logodiv {
 	width: 600px;
@@ -264,13 +275,9 @@ footer {
 	z-index: 2;
 }
 
-#downarrowdiv {
+#downarrowdivhome {
 	display: none;
-	position: relative;
-	width: 50px;
-	height: 100px;
-	margin: -220px auto 0 auto;
-	z-index: 3;
+	margin-top: -220px;
 }
 
 @-webkit-keyframes slide {
@@ -304,15 +311,58 @@ footer {
 }
 
 #aboutme {
-	margin-top: 0px;
 	padding-bottom: 120px;
-	color: white;
+	text-align: center;
 	font-family: 'Josefin Slab', serif;
 	font-size: 40px;
-	text-align: center;
 }
 
 .fineprint {
 	font-family: Arial;
 	font-size: 9px;
+}
+
+.edu_new {
+	padding-top: 30%;
+}
+
+.edu_date {
+	text-align: right;
+	font-style: italic;
+}
+
+.edu_name {
+	margin-top: 0px;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.edu_subheading {
+	font-size: 30px;
+}
+
+.edu_center {
+	text-align: center;
+}
+
+.edu_list {
+	list-style-type: circle;
+}
+
+#edu_uwa {
+	padding-top: 200px;
+}
+
+#edu_other {
+	padding-top: 350px;
+	padding-bottom: 350px;
+}
+
+.downarrowdiv {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 100px;
+	margin: 100px auto 0 auto;
+	z-index: 3;
 }

@@ -5,9 +5,17 @@
 	<title>Education | Eric Tan's Interactive Online Resume</title>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+	<link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
+	<script>
+		$(document).ready(function() {
+			//Set smooth scrolling on down arrow:
+			$('.downarrowdiv').localScroll(1000);
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -23,9 +31,56 @@
 		</div>
 	</header>
 
-	<div id="height100">
-		<div id="logodiv">
-			edu edu
+	<div id="main" class="centered">
+		<div id="edu_uwa">
+			<p class="edu_date">Feb 2011 - Nov 2013</p>
+			<p class="edu_name">University of Western Australia</p>
+			<p class="edu_subheading"><b>Bachelor of Computer Science</b>(Expected graduation: Nov 2014)</p>
+			<p class="edu_center">GPA: 6.240, WAM: 77.840</p>
+			<ul class="edu_list">
+				<li>Major in Web Technologies, Minor in Computation</li>
+				<li>Experience with programming, computer networking, databases and website design</li>
+				<li>Found passion for programming initially, transitioned that passion into web design</li>
+			</ul>
+		</div>
+	
+		<div class="downarrowdiv"><a href="#edu_crown"><img id="downarrow" src="images/down.png" alt="down"/></a></div>
+	
+		<div id="edu_crown" class="edu_new">
+			<p class="edu_date">July 2012 - March 2014</p>
+			<p class="edu_name">Crown Perth</p>
+			<p class="edu_subheading"><b>Certificate III in Hospitality</b></p>
+			<p class="edu_center">Completing 18 months of part-time work experience in customer service,
+			in the fields of restaurants, bars, hotels and casinos.</p>
+			<ul class="edu_list">
+				<li>Great people and communication skills</li>
+				<li>Experience working in a team</li>
+				<li>Learning new skills regularly</li>
+			</ul>
+		</div>
+		
+		<div class="downarrowdiv"><a href="#edu_rossmoyne"><img id="downarrow" src="images/down.png" alt="down"/></a></div>
+		
+		<div id="edu_rossmoyne" class="edu_new">
+			<p class="edu_date">Feb 2006 - Oct 2010</p>
+			<p class="edu_name">Rossmoyne Senior High School</p>
+			<p class="edu_subheading"><b>Year 12 WACE Graduation - Class of 2010</b></p>
+			<p class="edu_center"><b>99.50</b> ATAR rank</p>
+			<ul class="edu_list">
+				<li>DUX in Applied Information Technologies 3A/3B for my school</li>
+				<li>95.0 scaled score (all courses combined over the entire cohort) for MAT 3C/3D</li>
+				<li>94.8 scaled score (all courses combined over the entire cohort) for MAS 3C/3D</li>
+			</ul>
+		</div>
+		
+		<div class="downarrowdiv"><a href="#edu_other"><img id="downarrow" src="images/down.png" alt="down"/></a></div>
+
+		<div id="edu_other" class="edu_new">
+			<p class="edu_center">Other note-worthy mentions:</p>
+			<ul class="edu_list">
+				<li>Nov 2010 - Completed Defensive Driving Course (DTEC 3)</li>
+				<li>Feb 1998 - Nov 2005 - Completion of Saturday Chinese School at Leeming Chung Wah Chinese School</li>
+			</ul>
 		</div>
 	</div>
 	

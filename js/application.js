@@ -58,7 +58,7 @@ function fadeIn(obj) {
 	function loadTitles() {
 		$('#text_et').fadeIn(500,function() {
 			$('#text_wd').fadeIn(500,function() {
-				$('#downarrowdiv').fadeIn(500)
+				$('#downarrowdivhome').fadeIn(500)
 			});
 		});
 	}
