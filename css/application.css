@@ -366,3 +366,40 @@ footer {
 	margin: 100px auto 0 auto;
 	z-index: 3;
 }
+
+#achdisclaimer {
+	font-size: 12px;
+	text-align: right;
+}
+
+.achpic {
+	display: block;
+	float: left;
+	width: 315px;
+	height: 460px;
+	margin: 0 0 10px 10px;
+	border: 1px solid black;
+	background: white;
+	
+	text-align: center;
+	font-family: Arial;
+	color: #000000;
+	
+	opacity: 0.5;
+}
+
+.achpic:hover {
+	border: 1px solid red;
+	opacity: 1;
+}
+
+.achdate {
+	margin: 0;
+	font-style: italic;
+}
+
+.achsubtext {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+}
