@@ -64,10 +64,14 @@ function fadeInHome() {
 
 // 'Fade' in the timeline entries one by one
 function fadeInWorkExp() {
-	$('#timeline_tutor').fadeIn(1000,function() {
-		$('#timeline_myer').fadeIn(1000,function() {
-			$('#timeline_crown').fadeIn(1000,function() {
-				$('#timeline_next').fadeIn(1000)
+	$('#timeline_bg').fadeIn(1000,function() {
+		$('#timeline_grad').fadeIn(1000,function() {
+			$('#timeline_tutor').fadeIn(1000,function() {
+				$('#timeline_myer').fadeIn(1000,function() {
+					$('#timeline_crown').fadeIn(1000,function() {
+						$('#timeline_next').fadeIn(1000)
+					});
+				});
 			});
 		});
 	});
