@@ -372,6 +372,10 @@ footer {
 	text-align: right;
 }
 
+.clearfloat {
+	clear: both;
+}
+
 .achpic {
 	display: block;
 	float: left;
@@ -402,4 +406,56 @@ footer {
 	margin: 0;
 	font-size: 14px;
 	font-weight: 700;
+}
+
+#timelinediv {
+	width: 800px;
+	height: 710px;
+	margin: 25px auto 0 auto;
+	background: url(../images/workexp_bg.png) no-repeat;
+}
+
+#timeline_space1 {
+	height: 190px;
+	display: block;
+}
+
+#timeline_tutor {
+	height: 100px;
+	display: none;
+}
+
+#timeline_myer {
+	height: 80px;
+	display: none;
+}
+
+#timeline_space2 {
+	height: 20px;
+	display: block;
+}
+
+#timeline_crown {
+	height: 200px;
+	display: none;
+}
+
+#timeline_next {
+	padding-left: 85px;
+	display: none;
+}
+
+.timeline_pic {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.timeline_date {
+	font-size: 25px;
+}
+
+.timeline_info {
+	display: inline-block;
+	vertical-align: middle;
+	width: 700px;
 }

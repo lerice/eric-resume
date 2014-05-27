@@ -52,14 +52,23 @@ $(document).ready(function() {
 });
 
 // 'Fade' in the home page circle logo, with titles following
-function fadeIn(obj) {
-	$(obj).fadeIn(1000, loadTitles);
-	
-	function loadTitles() {
+function fadeInHome() {
+	$('#logo').fadeIn(1000,function() {
 		$('#text_et').fadeIn(500,function() {
 			$('#text_wd').fadeIn(500,function() {
 				$('#downarrowdivhome').fadeIn(500)
 			});
 		});
-	}
+	});
+}
+
+// 'Fade' in the timeline entries one by one
+function fadeInWorkExp() {
+	$('#timeline_tutor').fadeIn(1000,function() {
+		$('#timeline_myer').fadeIn(1000,function() {
+			$('#timeline_crown').fadeIn(1000,function() {
+				$('#timeline_next').fadeIn(1000)
+			});
+		});
+	});
 }
