@@ -469,3 +469,32 @@ footer {
 	width: 690px;
 	padding-left: 10px;
 }
+
+.port_website {
+	border-top: 1px solid white;
+	opacity: 0.4;
+	transition-duration: 1.5s;
+}
+
+.port_website:hover {
+	opacity: 1;
+}
+
+.port_first {
+	border-top: none;
+}
+
+.port_title {
+	text-align: center;
+	font-size: 45px;
+	margin: 20px 0;
+}
+
+.port_pic {
+	margin-left: 4px;
+	border: 1px solid #000000;
+}
+
+.port_pic:hover {
+	border-color: #FF0000;
+}
