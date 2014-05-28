@@ -410,23 +410,24 @@ footer {
 
 #timelinediv {
 	width: 800px;
+	height: 740px;
 	margin: 0 auto;
 }
 
 #timeline_bg {
-	margin-bottom: -714px;
+	margin-bottom: -704px;
 	display: none;
 }
 
 #timeline_grad {
-	height: 130px;
+	height: 110px;
 	display: none;
 }
 
 #timeline_tutor {
 	height: 100px;
 	display: none;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 #timeline_myer {
