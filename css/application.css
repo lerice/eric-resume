@@ -13,6 +13,7 @@ body {
 
 header {
 	width: 100%;
+	min-width: 500px;
 	min-height: 80px;
 	background: #1E1E1E;
 	border-bottom: 3px solid;
@@ -498,3 +499,20 @@ footer {
 .port_pic:hover {
 	border-color: #FF0000;
 }
+
+#contact_left {
+	width: 400px;
+	background: red;
+	float: left;
+}
+
+#contact_right {
+	width: 400px;
+	background: blue;
+	float: left;
+}
+
+#mepic {
+	width: 100%;
+}
+
