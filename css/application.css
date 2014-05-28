@@ -323,7 +323,7 @@ footer {
 }
 
 .edu_new {
-	padding-top: 30%;
+	padding-top: 200px;
 }
 
 .edu_date {
@@ -350,11 +350,11 @@ footer {
 }
 
 #edu_uwa {
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
 #edu_other {
-	padding-top: 350px;
+	padding-top: 300px;
 	padding-bottom: 350px;
 }
 
@@ -363,7 +363,7 @@ footer {
 	position: relative;
 	width: 50px;
 	height: 100px;
-	margin: 100px auto 0 auto;
+	margin: 50px auto 0 auto;
 	z-index: 3;
 }
 
