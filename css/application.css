@@ -516,11 +516,11 @@ footer {
 .contact_column {
 	width: 400px;
 	float: left;
+	text-align: center;
 }
 
 #contactcaption {
 	font-size: 12px;
-	text-align: center;
 	color: #666666;
 	margin: 0;
 }
@@ -530,7 +530,6 @@ footer {
 	height: 223px;
 	margin-top: 50px;
 	margin-left: 50px;
-	text-align: center;
 	background: url(../images/businesscard_bg.jpg);
 	border: 1px solid #666666;
 	color: #666666;
@@ -566,7 +565,7 @@ footer {
 }
 
 #cvbutton {
-	margin: 50px 0 50px 125px;
+	margin: 50px 0 50px 0px;
 }
 
 .imagefadehover {
