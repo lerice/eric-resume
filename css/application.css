@@ -323,6 +323,23 @@ footer {
 	font-size: 9px;
 }
 
+.skillscolumns {
+	text-align: center;
+}
+
+.skillscolumns li {
+	display: inline-block;
+	list-style-type: none;
+	background: blue;
+	width: 200px;
+	height: 150px;
+	margin: 0 10px 0 10px;
+}
+
+.skillscolumns li:hover {
+	background: red;
+}
+
 .edu_new {
 	padding-top: 200px;
 }
