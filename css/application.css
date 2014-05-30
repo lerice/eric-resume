@@ -102,6 +102,10 @@ header {
 	font-family: 'Cambo', serif;
 }
 
+.para_center {
+	text-align: center;
+}
+
 /* CSS for the footer */
 
 footer {
@@ -329,6 +333,8 @@ footer {
 
 .skillscolumns {
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 .skillscolumns li {
@@ -336,9 +342,9 @@ footer {
 	list-style-type: none;
 	width: 200px;
 	height: 150px;
-	margin: 0 10px 0 10px;
+	margin: 0 20px 0 20px;
 	vertical-align: middle;
-	
+
 	opacity: 1;
 	transition-duration: 1s;
 }
@@ -347,8 +353,47 @@ footer {
 	opacity: 0.5;
 }
 
-.skillrating {
+.skillratingcontainer {
 	text-align: center;
+	padding: 15px 0 15px 0;
+}
+
+.skillratingdiv {
+	width: 150px;
+	height: 16px;
+	background:  url(../images/ratingbar_bg.jpg) right;
+	border: 2px solid #FFFFFF;
+	border-radius: 6px;
+	display: inline-block;
+	margin-bottom: -5px;
+	
+	transition-duration: 1.5s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(1, 0.5, 0.25, 1);
+}
+
+.rate10:hover {
+	background-position: 0 0;
+}
+
+.rate09:hover {
+	background-position: -20px 0;
+}
+
+.rate03:hover {
+	background-position: -110px 0;
+}
+
+.rating {
+	opacity: 0;
+	
+	transition-duration: 1.5s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(1, 0.5, 0.25, 1);
+}
+
+.skillratingdiv:hover + .rating {
+	opacity: 1;
 }
 
 .skilltextbig {
@@ -372,10 +417,6 @@ footer {
 
 .edu_subheading {
 	font-size: 30px;
-}
-
-.edu_center {
-	text-align: center;
 }
 
 .edu_list {
