@@ -323,6 +323,10 @@ footer {
 	font-size: 9px;
 }
 
+.line {
+	border-top: 1px dashed #FFFFFF;
+}
+
 .skillscolumns {
 	text-align: center;
 }
@@ -330,14 +334,25 @@ footer {
 .skillscolumns li {
 	display: inline-block;
 	list-style-type: none;
-	background: blue;
 	width: 200px;
 	height: 150px;
 	margin: 0 10px 0 10px;
+	vertical-align: middle;
+	
+	opacity: 1;
+	transition-duration: 1s;
 }
 
 .skillscolumns li:hover {
-	background: red;
+	opacity: 0.5;
+}
+
+.skillrating {
+	text-align: center;
+}
+
+.skilltextbig {
+	font-size: 50px;
 }
 
 .edu_new {
