@@ -522,7 +522,15 @@ footer {
 #timelinediv {
 	width: 800px;
 	height: 740px;
-	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	font-family: 'Cambo', serif;
 }
 
 #timeline_bg {
@@ -621,6 +629,7 @@ footer {
 	margin: auto;
 	padding-top: 80px;
 	padding-bottom: 120px;
+	font-family: 'Cambo', serif;
 }
 
 .contact_column {
