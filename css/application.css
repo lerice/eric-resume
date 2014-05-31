@@ -106,6 +106,15 @@ header {
 	text-align: center;
 }
 
+.imagefadehover {
+	opacity: 1;
+	transition-duration: 1s;
+}
+
+.imagefadehover:hover {
+	opacity: 0.5;
+}
+
 /* CSS for the footer */
 
 footer {
@@ -353,6 +362,21 @@ footer {
 	opacity: 0.5;
 }
 
+.skillscolumns2 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.skillscolumns2 li {
+	display: inline-block;
+	list-style-type: none;
+	width: 210px;
+	height: 200px;
+	margin: 0 15px 0 15px;
+	vertical-align: middle;
+}
+
 .skillratingcontainer {
 	text-align: center;
 	padding: 15px 0 15px 0;
@@ -365,7 +389,7 @@ footer {
 	border: 2px solid #FFFFFF;
 	border-radius: 6px;
 	display: inline-block;
-	margin-bottom: -5px;
+	margin: 0 5px -5px 5px;
 	
 	transition-duration: 1.5s;
 	transition-property: all;
@@ -378,6 +402,14 @@ footer {
 
 .rate09:hover {
 	background-position: -20px 0;
+}
+
+.rate08:hover {
+	background-position: -35px 0;
+}
+
+.rate07:hover {
+	background-position: -50px 0;
 }
 
 .rate03:hover {
@@ -398,6 +430,11 @@ footer {
 
 .skilltextbig {
 	font-size: 50px;
+}
+
+#graphicdesignpic {
+	display: block;
+	margin: 0 auto;
 }
 
 .edu_new {
@@ -639,13 +676,4 @@ footer {
 
 #cvbutton {
 	margin: 50px 0 50px 0px;
-}
-
-.imagefadehover {
-	opacity: 1;
-	transition-duration: 1s;
-}
-
-.imagefadehover:hover {
-	opacity: 0.5;
 }
